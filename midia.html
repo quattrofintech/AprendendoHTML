@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inserindo Mídias</title>
+</head>
+<body>
+    <h1>Mídias</h1>
+    <h2>Audio</h2>
+    <h3>Simples</h3>
+    <audio src="midia/audio/musica.mp3" preload="metadata" autoplay controls loop></audio>
+    
+    <h3>Compatibildade</h3>
+    <audio controls preload="metadata">
+        <source src="midia/audio/musica.mp3" type="audio/mpeg">
+        <source src="midia/audio/musica.ogg" type="audio/ogg">
+        <source src="midia/audio/musica.wav" type="audio/wav"> <!-- Evitar -->
+        <p>Desculpa, tivemos um problema!</p>
+    </audio>
+
+    <h2>Vídeo</h2>
+    <h3>Local</h3>
+    <h4>Gato</h4>
+    <h5>MP4</h5>
+    <video src="midia/video/gato.mp4"  preload="metadata"  
+    controls loop autoplay></video> <!-- poster="img/logoFundoAzulVGA.jpg" -->
+    
+    <h5>Compatibilidade</h5>
+    <video controls preload="metadata">
+        <source src="midia/video/gatinho.mp4" type="video/mp4">
+        <source src="midia/video/gatinho.m4v" type="video/m4v">
+        <source src="midia/video/gatinho.webm" type="video/webm">
+    </video>
+
+    <h3>Servidor</h3>
+    <h4>Youtube</h4>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/rJEIo9LxEQs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    
+    <h4>Vimeo</h4>
+    <iframe src="https://player.vimeo.com/video/45753471?h=891f209cbe&autoplay=0&loop=1&color=ffffff&title=1&byline=1&portrait=0" width="560" height="315" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+
+    <h2>Incorporação</h2>
+    <h3>Página</h3>
+    <iframe src="texto.html" width="1000" frameborder="0"></iframe>
+    
+    <h3>PDF</h3>
+    <iframe src="arquivos/lorem.pdf" width="1000" height="500" frameborder="0"></iframe>
+
+    <h3>Spotify</h3>
+    <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/5fciNz4wSveVuSnRcmCsP4?utm_source=generator" width="50%" height="380" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
+
+    <h3>Deezer</h3>
+    <iframe title="deezer-widget" src="https://widget.deezer.com/widget/dark/track/2114406" width="400" height="300" frameborder="0" allowtransparency="true" allow="encrypted-media; clipboard-write">
+    </iframe>
+
+    <h3>Amazon Music</h3>
+    <iframe id='AmazonMusicEmbedB08HZFT3HZ' src='https://music.amazon.com.br/embed/B08HZFT3HZ/?id=egk1PHL0iO&marketplaceId=ART4WZ8MWBX2Y&musicTerritory=BR' width='100%' height='550px' style='border:1px solid rgba(0, 0, 0, 0.12);max-width:50%'></iframe>
+
+
+</body>
+</html>
