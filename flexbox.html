@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        /* DIV CONTAINER*/
+        .container{
+            height: auto; 
+            display: flex;
+            flex-wrap: wrap; /* QUEBRA DE LINHA */
+            justify-content: space-around; /* ALINHAMENTO HORIZONTAL */
+            align-items: baseline; /* ALINHAMENTO VERTICAL */
+
+        }
+        .box-container{
+            width: auto;
+            color: white;
+            background-color: blue;
+            border: 2px solid red;
+        }
+        .box-container:nth-child(1){
+            background-color: blueviolet;
+            width: 65%;
+        }
+        .box-container:nth-child(2){
+            width: 30%;
+            background-color: rosybrown;
+        }
+
+        /* MENU */
+        header{
+            background-color: #c3c3c3;
+            display: flex;
+            flex-wrap: nowrap;
+            justify-content: space-between;
+            padding: 20px;
+            align-items: center;
+        }
+
+        header nav ul{
+            display: flex;
+            list-style: none;
+        }
+
+        header nav ul li{
+            margin: 10px;
+            font-size: 18pt;
+        }
+
+        a{
+            text-decoration: none;
+            color: white;
+            font-size: 16pt;
+            font-family: sans-serif;
+            transition: all ease-in 0.3s; /* Efeito de transição*/
+            padding: 10px;
+        }
+
+        a:hover{
+            opacity: 0.5;
+            text-decoration: underline;
+            color: black;
+            margin-right: 20px;
+        }
+
+
+    </style>
+</head>
+<body>
+    <h1>Flexbox</h1>
+    <h2>Exemplo 1</h2>
+    <div class="container">
+        <div style="order:1" class="box-container">01
+        <h2>Teste</h2></div>
+        <div style="order:3" class="box-container">
+            02
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium nemo perspiciatis, quas nobis, eius maiores officia odit quidem at, sit voluptatibus officiis accusamus repudiandae dolor repellat ducimus culpa sed totam.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed, deleniti. Atque consequatur amet unde enim culpa magnam quo suscipit inventore quas. Illum dignissimos id inventore est accusantium porro cum quia!</p>
+        </div>
+    </div>
+
+    <h2>Exemplo 2</h2>
+    <header>
+        <a href="">Logo</a>
+        <nav>
+            <ul>
+                <li><a href="">HOME</a></li>
+                <li><a href="">CONTATO</a></li>
+                <li><a href="">SUPORTE</a></li>
+            </ul>
+        </nav>
+    </header>
+</body>
+</html>
