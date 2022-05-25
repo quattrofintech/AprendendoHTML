@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GRID</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            color: white;
+        }
+        body{
+            background-color: rgb(20, 18, 18);
+        }
+        h1,h2{
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+        /*EXEMPLO 1*/
+        .grid-container{
+            display: grid;
+            grid-template-columns: repeat(3, 1fr); /* Numero de colunas e tamanho*/
+            gap: 10px 10px; /* Vão entre as linhas e colunas */ 
+        }
+        .grid-container .grid-item{
+            background-color: brown;
+            border: 2px solid blue;
+        }
+        .grid-container .grid-item:nth-child(1){
+            grid-column: 1/3;
+        }
+        .grid-container .grid-item:nth-child(3){
+            grid-row: 2/4;
+        }
+
+        /* EXEMPLO 2*/
+        .grid1{
+            display: grid;
+            gap: 10px 10px;
+            grid-template-columns: repeat(3, 1fr);
+            justify-content: space-around;
+        }
+
+        .grid1 .grid1-item{
+            background-color: darkcyan;
+            text-align: center;
+            padding: 10px;
+        }
+
+        .grid1 .grid1-item:nth-child(1){
+            grid-column: 1/4;
+        }
+        .grid1 .grid1-item:nth-child(5){
+            grid-column: 1/4;
+        }
+
+        /* YOUTUBE */
+        .grid-youtube{
+            display: grid;
+            grid-template-columns: 65% 30%;
+            justify-content: space-around;
+            align-items: center;
+        }
+        .grid-youtube .youtube-item{
+        }
+
+        .grid-youtube .youtube-item:nth-child(1){
+            
+        }
+        .grid-youtube .youtube-item:nth-child(1) video{
+            width: 100%;
+        }
+        .grid-youtube .youtube-item:nth-child(1) h3{
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+        .grid-youtube .youtube-item:nth-child(1) ul{
+            display: flex;
+            list-style: none;
+            border-bottom: 1px solid #c3c3c3;
+        }
+        .grid-youtube .youtube-item:nth-child(1) ul li{
+            width: auto;
+            margin: auto;
+            margin-bottom: 10px;
+            font-size: 08pt;
+        }
+        .grid-youtube .youtube-item:nth-child(1) div{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .grid-youtube .youtube-item:nth-child(1) div.image img{
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            margin: 20px;
+        }
+        .grid-youtube .youtube-item:nth-child(1) div div input{
+            background-color: red;
+            color: white;
+            border: none;
+            padding: 5px;
+            cursor: pointer;
+            margin: 10px;
+        }
+        .grid-youtube .youtube-item:nth-child(1) details{
+            margin: 20px;
+            width: 100%;
+            padding: 10px;
+        }
+        .grid-youtube .youtube-item:nth-child(1) details p{
+            width: 90%;
+            text-align: justify;
+            text-indent: 20px;
+            margin-right: 10px;
+        
+        }
+
+
+
+
+    </style>
+</head>
+<body>
+    <h1>GRID</h1>
+    <h2>Exemplo 1</h2>
+    <div class="grid-container">
+        <div class="grid-item">01</div>
+        <div class="grid-item">02</div>
+        <div class="grid-item">03</div>
+        <div class="grid-item">04</div>
+        <div class="grid-item">05</div>
+        <div class="grid-item">06</div>
+        <div class="grid-item">07</div>
+        <div class="grid-item">08</div>
+        <div class="grid-item">09</div>
+    </div>
+
+    <h2>Exemplo 2</h2>
+    <div class="grid1">
+        <div class="grid1-item">HEADER</div>
+        <div class="grid1-item">ESQUERDA</div>
+        <div class="grid1-item">CENTRO</div>
+        <div class="grid1-item">DIREITA</div>
+        <div class="grid1-item">RODAPE</div>
+    </div>
+
+    <h2>YOUTUBE</h2>
+    <section class="grid-youtube">
+        <div class="youtube-item">
+            <video src="midia/video/gato.mp4" preload="metadata" controls></video>
+            <h3>GATINHO BONITINHO: BOMBOU NA INTERNET</h3>
+            <ul>
+                <li>1.000.000 visualizações</li>
+                <li>20 MIL</li>
+                <li>NÃO GOSTEI</li>
+                <li>COMPARTILHAR</li>
+                <li>CLIP</li>
+                <li>SALVAR</li>
+            </ul>
+            <div>
+                <div class="image">
+                    <img src="img/logoFundoAzulVGA.jpg" alt="">
+                    <h4>GATINHOS FOFOS</h4>
+                </div>
+                <div>
+                    <input type="button" value="INSCREVER-SE">
+                </div>
+            </div>
+            <details>
+                <summary> MOSTRAR MAIS</summary>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eum neque ratione itaque provident aut praesentium facere earum beatae sequi, perspiciatis, doloremque ipsa quo veniam sapiente aperiam animi ut optio repellendus.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic adipisci recusandae, velit quas libero autem. Labore alias tenetur quaerat deserunt temporibus, nobis laboriosam minus fugit ab adipisci. Saepe, ducimus cum!</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos, possimus adipisci officiis sunt beatae consequatur laudantium. Dolores similique ratione ipsa asperiores eligendi accusantium, cumque tenetur dolorem laudantium! Exercitationem, natus deserunt?</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti blanditiis aperiam porro deserunt fugiat error nostrum reiciendis ea eum, quas exercitationem nemo at nulla earum hic ipsum totam, dolorum velit.</p>
+            </details>
+        </div>
+        <div class="youtube-item">INDICAÇÃO</div>
+        <div class="youtube-item">COMENTÁRIOS</div>
+    </section>
+</body>
+</html>
