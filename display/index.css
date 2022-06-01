@@ -1,0 +1,109 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/* BLOCK*/
+.block{
+    margin-bottom: 40px;
+}
+.block h1{
+    text-align: center;
+}
+
+.block .b{
+    width: 300px;
+    border: 2px solid red;
+    margin-bottom: 10px;
+}
+
+/* INLINE */
+
+.inline{
+    margin-bottom: 40px;
+}
+.inline h1{
+    text-align: center;
+}
+
+.inline .i{
+    display: inline;
+    width: 300px;
+    border: 1px solid brown;
+}
+
+/* BLOCK - INLINE */
+
+.inline-block{
+    margin-bottom: 40px;
+}
+.inline-block h1{
+    text-align: center;
+}
+
+.inline-block .ib{
+    display: inline-block;
+    width: 300px;
+    height: 100px;
+    border: 3px solid violet;
+    margin-bottom: 5px;
+}
+
+/* BLOCK - INLINE */
+
+.none{
+    margin-bottom: 40px;
+}
+.none h1{
+    text-align: center;
+}
+
+.none .n{
+    width: 300px;
+    border: 5px solid aqua;
+    margin-bottom: 10px;
+}
+.none .s{
+    height: 100px;
+    visibility: hidden;
+    display: none;
+}
+
+/* MAIN */
+main{
+    height: 400px;
+    background-color: cadetblue;
+}
+main h1{
+    text-align: center;
+}
+
+main ul{
+    display: flex;
+    list-style: none;
+}
+main ul li{
+    margin: 10px;
+    padding: 10px;
+    text-transform: uppercase;
+    position: relative;
+}
+
+/* DROPDOWN */
+main ul li div{
+    position: absolute;
+    top: 20px;
+    visibility: hidden;
+    width: 400px;
+    height: 400px;
+}
+main ul li div img{
+    width: 100%;
+}
+main ul li div ul{
+    display: block;
+    margin-top: 300px;
+}
+main ul li:hover div{
+    visibility: visible;
+}
