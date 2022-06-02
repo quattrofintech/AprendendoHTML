@@ -93,17 +93,23 @@ main ul li{
 main ul li div{
     position: absolute;
     top: 20px;
-    visibility: hidden;
+    display: none; /* visibility: hidden; */
     width: 400px;
     height: 400px;
 }
-main ul li div img{
+main ul li div ul{ 
+    display: block;
+}
+
+main ul li div img{ /* Se tivesse imagen no lugar da lista*/
     width: 100%;
 }
-main ul li div ul{
-    display: block;
-    margin-top: 300px;
-}
+
+ /* 
+    Ao passar o mouse no item da lista que contém um div
+    a div ficará visível / terá um display 
+ */
 main ul li:hover div{
-    visibility: visible;
+    display: block; /* visibility: visible; */
 }
+
