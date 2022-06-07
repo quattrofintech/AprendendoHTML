@@ -1,0 +1,225 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+header nav a .material-icons-two-tone{
+    color: blue;
+    font-size: 150px;
+}
+
+
+    /* SMARTPHONE  */
+@media(max-width: 600px){
+    /* MENU - BARRA SUPERIOR */
+    header{
+        background-color: brown;
+        text-align: center;
+    }
+    header nav{
+        font-size: 18pt;
+    }
+    header .desktop{
+        display:none; /* visibility: hidden; */
+    }
+    header .phone{    
+        display:block; /* visibility: visible; */
+    }
+    header nav a .material-icons{
+        color: green;
+        font-size: 50px;
+    }
+    
+
+
+    /* MAIN */
+    main{
+        padding: 30px;
+    }
+
+    main div{
+        width: 95%;
+        margin: auto;
+        margin-bottom: 50px;
+    }
+
+    main div img{
+        width: 100%;
+        height: auto;
+    }
+
+    main p{
+        width: 95%;
+        margin: auto;
+        font-size: 14pt;
+        text-align: justify;
+        margin-bottom: 5px;
+    }
+
+    /* FOOTER */
+    footer{
+        background-color: brown;
+        padding: 10px;
+    }
+    footer p{
+        text-align: center;
+        color: white;
+        font-size: 16pt;
+    }
+
+}
+
+    /*  TABLET    601px - 1099px*/
+@media(min-width: 601px){
+    /* MENU - BARRA SUPERIOR */
+    header{
+        background-color: green;
+        text-align: center;
+    }
+    header nav{
+        font-size: 20pt;
+    }
+    
+    header .desktop{
+        display:block; /* visibility: hidden; */
+    }
+    header .phone{    
+        display:none; /* visibility: visible; */
+    }
+
+
+    /* MAIN */
+    main{
+        padding: 20px;
+    }
+
+    main div{
+        width: 80%;
+        margin: auto;
+        margin-bottom: 30px;
+    }
+
+    main div img{
+        width: 100%;
+        height: auto;
+    }
+
+    main p{
+        width: 90%;
+        font-size: 18pt;
+        margin: auto;
+        text-align: justify;
+    }
+
+    /* FOOTER */
+    footer{
+        background-color: green;
+        padding: 10px;
+    }
+    footer p{
+        text-align: center;
+        color: white;
+        font-size: 20pt;
+    }
+
+}
+
+
+    /*  Desktop  1100px -  */
+@media(min-width: 1100px){
+    /* MENU - BARRA SUPERIOR */
+    header{
+        background-color: brown;
+        text-align: center;
+    }
+
+    header nav{
+        font-size: 28pt;
+    }
+
+
+    /* MAIN */
+    main{
+        padding: 30px;
+    }
+
+    main div{
+        width: 1000px;
+        margin: auto;
+        margin-bottom: 30px;
+    }
+
+    main div img{
+        width: 100%;
+        height: 400px;
+    }
+
+    main p{
+        font-size: 22pt;
+        text-align: justify;
+    }
+
+    /* FOOTER */
+    footer{
+        background-color: brown;
+        padding: 20px;
+    }
+    footer p{
+        text-align: center;
+        color: white;
+        font-size: 24pt;
+    }
+
+}
+
+    /*  Desktop  FULL HD -  */
+@media(min-width: 1920px){
+    /* MENU - BARRA SUPERIOR */
+    header{
+        background-color: yellow;
+        text-align: center;
+    }
+
+    header nav{
+        font-size: 28pt;
+    }
+
+
+    /* MAIN */
+    main{
+        padding: 30px;
+    }
+
+    main div{
+        width: 1000px;
+        margin: auto;
+        margin-bottom: 30px;
+    }
+
+    main div img{
+        width: 100%;
+        height: 400px;
+    }
+
+    main p{
+        font-size: 22pt;
+        text-align: justify;
+    }
+
+    /* FOOTER */
+    footer{
+        background-color: brown;
+        padding: 20px;
+    }
+    footer p{
+        text-align: center;
+        color: white;
+        font-size: 24pt;
+    }
+
+}
