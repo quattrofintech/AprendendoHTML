@@ -58,7 +58,11 @@ article label{
 article .material-icons{
     font-size: 16pt;
     padding: 3px;
+    
 }
 
 
 
+img:hover{
+    background-image: url(' ');
+}
